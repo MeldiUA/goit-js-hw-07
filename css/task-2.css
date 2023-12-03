@@ -1,0 +1,16 @@
+.gallery {
+  display: flex;
+  column-gap: 24px;
+  row-gap: 48px;
+  flex-wrap: wrap;
+}
+
+.gallery > li {
+  background-size: cover;
+}
+
+.img-gallery {
+  background-size: cover;
+  width: 360px;
+  height: 300px;
+}

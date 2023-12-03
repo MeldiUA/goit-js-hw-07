@@ -15,10 +15,7 @@ const images = [
 
 const listGalery = document.querySelector('ul.gallery');
 
-listGalery.style.display = "flex";
-listGalery.style.gap = "30px";
-listGalery.style.maxWidth = "40px"
 
-const itemsGallery = images.reduce((html, image) => html += `<li><img class="img-gallery" src="${image.url} alt="${image.alt}" width="200px"></li>`, "")
+const itemsGallery = images.reduce((html, image) => html += `<li><img class="img-gallery" src="${image.url} alt="${image.alt}""></li>`, "")
 
 listGalery.insertAdjacentHTML("beforeend", itemsGallery);
